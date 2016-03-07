@@ -8,6 +8,6 @@ export default class Utils {
 }
   static ScreenToCanvasCoordinates(ScreenX, ScreenY)
   {
-      return { "X": 400 + PixelsPerUnitLength * ScreenX, "Y": 225 - PixelsPerUnitLength * ScreenY };
+      return [400 + 50 * ScreenX,  225 - 50 * ScreenY];
   }
 }
