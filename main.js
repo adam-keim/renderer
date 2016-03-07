@@ -2,12 +2,8 @@ require('expose?$!./main.js');
 import Point from './src/point.js';
 import Mesh from './src/mesh.js';
 import Vector from './src/vector.js';
-import Utils from './src/utils.js'; 
+import Utils from './src/utils.js';
 import Camera from './src/camera.js'
-function ScreenToCanvasCoordinates(ScreenX, ScreenY)
-{
-    return { "X": 400 + PixelsPerUnitLength * ScreenX, "Y": 225 - PixelsPerUnitLength * ScreenY };
-}
 var cube = new Mesh(8)
 cube.Vertices[0] = new Point(1,1,1);
 cube.Vertices[1] = new Point(1,-1,1);
